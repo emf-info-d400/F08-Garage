@@ -7,7 +7,7 @@ Lisez **avec attention** et faites **exactement** les points suivants, avec **pr
 
 1. Créez la classe `Garage` avec les 3 informations suivantes : `nom`, `ville` et `propriétaire`. Donnez-lui un constructeur prenant `nom`, `ville` et `propriétaire` et un autre ne prenant seulement que `nom` et `ville`. On doit pouvoir ensuite lui demander toutes ces informations mais aucune ne devra pouvoir être modifiée après coup.
 
-2.	Créez la classe `Voiture` avec 3 attributs `marque`, `modèle` et `km`) ainsi qu’une propriété `prix`. Donnez-lui un constructeur prenant l'ensemble de ces informations. On doit pouvoir ensuite lui demander toutes ces informations, mais seuls `km` et `prix` pourront être modifiés après coup.
+2.	Créez la classe `Voiture` avec ces 4 attributs `marque`, `modèle`, `km` et `prix`. Donnez-lui un constructeur prenant l'ensemble de ces informations. On doit pouvoir ensuite lui demander toutes ces informations, mais seuls `km` et `prix` pourront être modifiés après coup.
 
 3.	Ajoutez ensuite les caractéristiques et fonctionnalités suivantes :
    - Faites en sorte qu’un garage puisse contenir jusqu’à 10 voitures (_pour vous aider pensez-y : où est-ce qu'un garage range ses voitures ?_).
