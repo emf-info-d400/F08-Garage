@@ -17,7 +17,7 @@ erDiagram
         double prix
     }
 ```
-# Diagramme UML - Diagramme de séquence du main() de l'application :
+# Diagramme UML - Séquence du main() de l'application :
 ```mermaid
 ---
 title: F08-Garage / Diagramme UML de séquence du main() de l'application
@@ -63,7 +63,7 @@ sequenceDiagram
     end
 ```
 
-# Diagramme UML - Diagramme des classes de l'application :
+# Diagramme UML - Classes de l'application :
 ```mermaid
 ---
 title: F08-Garage / Diagramme UML des classes de l'application
