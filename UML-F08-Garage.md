@@ -1,7 +1,7 @@
 # Diagramme ER - Notation "patte d'oie" :
 ```mermaid
 ---
-title: F08-Garage / Diagramme ER "patte d'oie"
+title: F08-Garage
 ---
 erDiagram
     GARAGE ||--o{ VOITURE : contient
@@ -20,7 +20,7 @@ erDiagram
 # Diagramme UML - Séquence du main() de l'application :
 ```mermaid
 ---
-title: F08-Garage / Diagramme UML de séquence du main() de l'application
+title: F08-Garage
 ---
 sequenceDiagram
     main()->>Garage monGarage : <<creation>>
@@ -66,7 +66,7 @@ sequenceDiagram
 # Diagramme UML - Classes de l'application :
 ```mermaid
 ---
-title: F08-Garage / Diagramme UML des classes de l'application
+title: F08-Garage
 ---
 classDiagram
 class Application {
