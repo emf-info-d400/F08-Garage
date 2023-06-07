@@ -1,8 +1,72 @@
-# UML :
-Ci-dessous le diagramme de classes UML pour l'ensemble de ce programme  :
+# Diagramme ER - Notation "patte d'oie" :
 ```mermaid
 ---
-title: F08-Garage
+title: F08-Garage / Diagramme ER "patte d'oie"
+---
+erDiagram
+    GARAGE ||--o{ VOITURE : contient
+    GARAGE {
+        string nom
+        string ville
+        string proprietaire
+    }
+    VOITURE {
+        string marque
+        string modele
+        int km
+        double prix
+    }
+```
+# Diagramme UML - Diagramme de séquence du main() de l'application :
+```mermaid
+---
+title: F08-Garage / Diagramme UML de séquence du main() de l'application
+---
+sequenceDiagram
+    main()->>Garage monGarage : <<creation>>
+    main()->>Voiture v1 : <<creation>>
+    main()->>Voiture v2 : <<creation>>
+    main()->>Voiture v3 : <<creation>>
+    main()->>+Garage monGarage : ajouteVoiture(v1)
+    Garage monGarage-->>-main(): ajoutOK
+    alt ajoutOK == true
+        main()->>System.out : println("Ajout de v1 a réussi !")
+        main()->>+Garage monGarage : ajouteVoiture(v2)
+        Garage monGarage-->>-main(): ajoutOK
+        alt ajoutOK == true
+            main()->>System.out : println("Ajout de v2 a réussi !")
+            main()->>+Garage monGarage : ajouteVoiture(v3)
+            Garage monGarage-->>-main(): ajoutOK
+            alt ajoutOK == true
+                main()->>System.out : println("Ajout de v3 a réussi !")
+
+                main()->>+Garage monGarage : toString()
+                Garage monGarage-->>-main(): txtGarage
+
+                main()->>System.out : println("Voici le contenu du Garage : " + txtGarage)
+
+                main()->>+Garage monGarage : listeDesVoitures()
+                Garage monGarage-->>-main(): voitures
+
+                loop FOR EVERY voiture IN voitures NOT NULL
+                    main()->>System.out : println(voiture)
+                end
+
+            else
+                main()->>System.err : println("La voiture v3 n'a pas été ajoutée car le parking est plein !")
+            end
+        else
+            main()->>System.err : println("La voiture v2 n'a pas été ajoutée car le parking est plein !")
+        end
+    else
+        main()->>System.err : println("La voiture v1 n'a pas été ajoutée car le parking est plein !")
+    end
+```
+
+# Diagramme UML - Diagramme des classes de l'application :
+```mermaid
+---
+title: F08-Garage / Diagramme UML des classes de l'application
 ---
 classDiagram
 class Application {
