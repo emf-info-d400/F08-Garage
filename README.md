@@ -3,6 +3,7 @@
 - 45'
 
 ## CONSIGNE :
+
 Lisez **avec attention** et faites **exactement** les points suivants, avec **précision** et dans l'**ordre indiqué** :
 
 1. Créez la classe `Garage` avec les 3 informations suivantes : `nom`, `ville` et `propriétaire`. Donnez-lui un constructeur prenant `nom`, `ville` et `propriétaire` et un autre ne prenant seulement que `nom` et `ville`. On doit pouvoir ensuite lui demander toutes ces informations mais aucune ne devra pouvoir être modifiée après coup.
@@ -20,4 +21,5 @@ Lisez **avec attention** et faites **exactement** les points suivants, avec **pr
 5. Soignez le code et sa présentation de l’ensemble des classes du projet ! Vérifiez avoir respecté les enseignements reçus.
 
 ## RESTITUTION :
+
 1. Rendre cette formative normalement par `push` GitHub
