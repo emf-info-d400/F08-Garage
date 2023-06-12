@@ -17,6 +17,7 @@ erDiagram
         double prix
     }
 ```
+
 # Diagramme UML - Séquence du main() de l'application :
 ```mermaid
 ---
