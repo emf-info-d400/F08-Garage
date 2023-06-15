@@ -69,9 +69,7 @@ sequenceDiagram
 title: F08-Garage
 ---
 classDiagram
-class Application {
-    +main(String[] args)$ void
-}
+note for Garage "MAX_VOITURES = 10"
 class Voiture {
     -String marque
     -String modele
@@ -107,7 +105,10 @@ class Garage {
     +getProprietaire() String
     +setProprietaire(String proprietaire) void
 }
-note for Garage "MAX_VOITURES = 10"
+
 Garage "1" o--> "0..n" Voiture : -parking
 Application ..> Garage : utilise
+class Application {
+    +main(String[] args)$ void
+}
 ```
