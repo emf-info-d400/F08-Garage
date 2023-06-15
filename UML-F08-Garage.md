@@ -1,10 +1,12 @@
 # Diagramme ER - Notation "patte d'oie" :
 ```mermaid
-classDiagram
-class Triangle
-class Rectangle {
-  double width
-  double height
+namespace BaseShapes {
+            classDiagram
+            class Triangle
+            class Rectangle {
+              double width
+              double height
+            }
 }
 ```
 ```mermaid
