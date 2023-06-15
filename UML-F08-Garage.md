@@ -7,9 +7,7 @@ class Rectangle {
   double height
 }
 
-classDiagram
-namespace BaseShapes {
-}
+
 ---
 title: F08-Garage
 ---
