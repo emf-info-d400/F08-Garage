@@ -6,8 +6,8 @@ class Rectangle {
   double width
   double height
 }
-
-
+```
+```mermaid
 ---
 title: F08-Garage
 ---
