@@ -1,12 +1,15 @@
 # Diagramme ER - Notation "patte d'oie" :
 ```mermaid
 classDiagram
-    class models::Triangle
-    class Rectangle {
-      double width
-      double height
-    }
+class Triangle
+class Rectangle {
+  double width
+  double height
+}
 
+classDiagram
+namespace BaseShapes {
+}
 ---
 title: F08-Garage
 ---
