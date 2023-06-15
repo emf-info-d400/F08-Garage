@@ -1,7 +1,7 @@
 # Diagramme ER - Notation "patte d'oie" :
 ```mermaid
 classDiagram
-    class models:Triangle
+    class models::Triangle
     class Rectangle {
       double width
       double height
